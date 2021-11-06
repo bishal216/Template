@@ -1,8 +1,14 @@
-body{
+/*===============================================================================
+Remove all margins and paddings*/
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-.outer-wrapper {
+
+/*====================================================================
+Rotate outer wrapper for horizontal scrolling*/
+#outer-wrapper {
   width: 100vh;
   height: 100vw;
 
@@ -16,28 +22,54 @@ body{
 }
 .outer-wrapper::-webkit-scrollbar { width: 0 !important }
 
+/*================Title screen================*/
+.title-screen{
+  height: 100vw;
+  width: 100vh;
+
+  background-color: orange;
+}
+/*==================================================================
+Navbar*/
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 100;
+  position: sticky;top: 0;width: 100%;
+  top: 0vh;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+/*=========================================================
+Rotate inner wrapper in opposite direction to orient elements right way up*/
+.wrapper {
+  
+  display: flex;
+  flex-direction: row;
+  
+  width: 400vw;
+
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+/*============================================
+Individual slides at 100% wicth and 100% height of viewport*/
 .slide {
   width: 100vw;
   height: 100vh;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 400vw;
-}
-.one {
-  background: #efdefe;
-}
-.two {
-  background: #a3f3d3;
-}
-.three {
-  background: #0bbaa0;
-}
-.four {
-  background: #00dfdf;
-}
-.wrapper {
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-}
+
+/*===============================
+Generic Properties*/
+
+.bg-black {background: #111111;}
+.bg-white {background: #eeeeee;}

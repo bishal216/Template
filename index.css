@@ -20,30 +20,58 @@ Rotate outer wrapper for horizontal scrolling*/
   overflow-x: hidden;
   
   position: absolute;
-}
+} 
 .outer-wrapper::-webkit-scrollbar { width: 0 !important }
 
 /*================Title screen================*/
-.title-screen{
+.title-screen {
   height: 100vw;
   width: 100vw;
 
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 
-  background:url('img/bg.jpg');/*Placeholder BG <-- Apply cool animation here*/
-  background-size:  contain ;
+  background: url("img/bg.jpg"); /*Placeholder BG <-- Apply cool animation here*/
+  background-size: contain;
   background-color: orange;
+  /* position: relative; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-.logo{
-  height: 20vw;
-  width: 20vw;
+.title-screen_column{
+  width: 50%;
+  height: 100%;
 }
-.logo img{
+.logobubble{
+  height: 100vh;width: 100vw;
+  left: -40vw;
+}
+.logo {
+  height: 30vw;
+  width: 30vw;
+  backdrop-filter: blur(10px);
+  /* position: absolute;
+  top: 18rem;
+  left: 2rem; */
+}
+.logo img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+}
+.title-screen__header {
+    margin-top:   3vh;
+    color:  blue;
+}
+
+.title-screen__header h1 {
+  font-size: 5rem;
+}
+
+.title-screen__header-span {
+  color: orangered;
+  font-size: 7rem;
 }
 
 /*==================================================================
@@ -96,12 +124,14 @@ Individual slides at 100% wicth and 100% height of viewport*/
   border: 1px red solid;
 }
 
-/*===============================
-Generic Properties
+/*==========================
+Generic Properties*/
+.insertborder{border:   1px solid red;}
 
 <<<<<<< Updated upstream
 .bg-black {background: #111111;}
 .bg-white {background: #eeeeee;}
+<<<<<<< Updated upstream
 */
 =======
 /* Css for the components */
@@ -265,4 +295,7 @@ Generic Properties
   margin-left: 0;
 }
 
+>>>>>>> Stashed changes
+=======
+.alignbottom{position: absolute;bottom: 0;left: 0;}
 >>>>>>> Stashed changes

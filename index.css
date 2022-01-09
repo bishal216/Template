@@ -81,7 +81,11 @@ Rotate inner wrapper in opposite direction to orient elements right way up*/
 }
 
 /*============================================
+<<<<<<< Updated upstream
 Individual slides at 100% wicth and 100% height of viewport*/
+=======
+  Individual slides at 100% width and 100% height of viewport*/
+>>>>>>> Stashed changes
 .slide {
   width: 100vw;
   height: 100vh;
@@ -95,6 +99,170 @@ Individual slides at 100% wicth and 100% height of viewport*/
 /*===============================
 Generic Properties
 
+<<<<<<< Updated upstream
 .bg-black {background: #111111;}
 .bg-white {background: #eeeeee;}
 */
+=======
+/* Css for the components */
+
+/* Css for the components */
+#description {
+  border: 2px solid black;
+  height: 100%;
+  margin-left: 48px;
+  padding: 10px;
+}
+.description__div {
+  padding: 20px 90px;
+}
+.color-yellow {
+  color: #f89a1d;
+}
+.description__div h1 {
+  font-size: 50px;
+  letter-spacing: 1.01px;
+  margin-bottom: 30px;
+}
+
+.description__div p {
+  color: #f9f9fb;
+  font-size: 19px;
+  letter-spacing: 1.01px;
+  margin-bottom: 40px;
+}
+.department__img {
+  height: 80%;
+  margin: 0px 50px;
+}
+.department__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.letter__department {
+  border: 2px solid green;
+  height: 100%;
+  color: #f9f9fb;
+}
+.letter__department-letter {
+  border: 2px solid #f9f9fb;
+  margin: 50px;
+  padding: 30px 20px;
+}
+.letter__department-letter p {
+  font-size: 19px;
+}
+.letter__department-letter p:first-child {
+  margin-bottom: 20px;
+}
+.auther {
+  float: right;
+  margin-right: 50px;
+  font-size: 20px;
+  width: 40%;
+}
+
+/* Committe section */
+
+.committe__section {
+  margin: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.committe__section-flex {
+  display: flex;
+
+  padding: 12px;
+  flex-direction: row;
+  width: 250px;
+  height: 500px;
+
+  /* position: absolute; */
+}
+
+.committe__section-member {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  color: #e2e2e2;
+  margin-right: 10px;
+  /* margin-top: -100px; */
+}
+.margin-negative {
+  margin-top: -50px;
+}
+
+.committe__section-member_img {
+  margin-bottom: 15px;
+}
+.committe__section-member_img img {
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+}
+.committe__section-member_header {
+  margin-bottom: 35px;
+}
+
+.committe__section-member_header h4 {
+  font-weight: 500;
+  letter-spacing: 01.01px;
+  margin-bottom: 10px;
+}
+.committe__section-member_header p {
+  font-weight: 500;
+  letter-spacing: 01.01px;
+  font-size: 16px;
+}
+.committe__section-member_header p:last-child {
+  margin-top: 5px;
+}
+
+.st-line {
+  width: 10px;
+  height: 330px;
+  background-color: #f89a1d;
+  position: relative;
+  top: 55px;
+}
+.committe__section-member_contact {
+  margin-top: 40px;
+}
+.committe__section-member_contact a {
+  color: #e2e2e2;
+}
+.center-margin {
+  margin: 0 15px;
+}
+/* Event */
+.Three-row{
+  height: 30%;
+  width: 96%;
+  margin: 1.5%;
+  display: flex;
+}
+.Three-row > div {
+  flex-grow: 1;
+  margin: 0 2% 0 2%;
+}
+
+.Three-row > div:first-of-type {border: 1px orange solid;}
+.Three-row > div:nth-of-type(2) { border: 1px yellow solid; }
+.Three-row > div:nth-of-type(3) { border: 1px orange solid; }
+
+#top-row{
+  margin-left: 4%;
+}
+#bottom-row{
+  margin-left: 0;
+}
+
+>>>>>>> Stashed changes

@@ -1,27 +1,28 @@
 /*===============================================================================
 Remove all margins and paddings*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /*====================================================================
-Rotate outer wrapper for horizontal scrolling*/
+  Rotate outer wrapper for horizontal scrolling*/
 #outer-wrapper {
   width: 100vh;
   height: 100vw;
 
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
-  
+
   overflow-y: scroll;
   overflow-x: hidden;
-  
+
   position: absolute;
-} 
-.outer-wrapper::-webkit-scrollbar { width: 0 !important }
+}
+.outer-wrapper::-webkit-scrollbar {
+  width: 0 !important;
+}
 
 /*================Title screen================*/
 .title-screen {
@@ -38,19 +39,25 @@ Rotate outer wrapper for horizontal scrolling*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 2rem;
 }
-.title-screen_column{
-  width: 50%;
-  height: 100%;
+
+.title-screen__div {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  height: 90vh;
+  justify-content: end;
+  align-items: center;
 }
-.logobubble{
-  height: 100vh;width: 100vw;
-  left: -40vw;
+
+.title-screen__description {
+  width: 19rem;
 }
+
 .logo {
-  height: 30vw;
-  width: 30vw;
-  backdrop-filter: blur(10px);
+  height: 20vw;
+  width: 20vw;
   /* position: absolute;
   top: 18rem;
   left: 2rem; */
@@ -61,27 +68,32 @@ Rotate outer wrapper for horizontal scrolling*/
   border-radius: 50%;
 }
 .title-screen__header {
-    margin-top:   3vh;
-    color:  blue;
+  /* position: absolute;
+  top: 38rem;
+  left: 3rem; */
 }
 
 .title-screen__header h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
-
-.title-screen__header-span {
+.header__it {
+  font-size: 4rem;
+}
+.color-orange {
   color: orangered;
-  font-size: 7rem;
 }
 
 /*==================================================================
-Navbar*/
+  Navbar*/
 #navbar {
   overflow: hidden;
   z-index: 100;
-  position: sticky;top: 0;width: 100%;
+  position: sticky;
+  top: 0;
+  width: 100%;
   top: 0vh;
   backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /* Navbar links */
@@ -90,50 +102,42 @@ Navbar*/
   display: block;
   color: #fff;
   text-align: center;
-  padding: 14px;
+  padding: 14px 27px;
   text-decoration: none;
-  opacity:  1 ;
+  opacity: 1;
 }
 /*=========================================================
-Rotate inner wrapper in opposite direction to orient elements right way up*/
+  Rotate inner wrapper in opposite direction to orient elements right way up*/
 .wrapper {
-  
   display: flex;
   flex-direction: row;
-  
+
   width: 400vw;
 
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  margin-top:  -48px;
+  margin-top: -48px;
 }
 
 /*============================================
-<<<<<<< Updated upstream
-Individual slides at 100% wicth and 100% height of viewport*/
-=======
-  Individual slides at 100% width and 100% height of viewport*/
->>>>>>> Stashed changes
+  Individual slides at 100% wicth and 100% height of viewport*/
 .slide {
   width: 100vw;
   height: 100vh;
 
-  background:url('img/bg.jpg');/*Placeholder BG <-- Apply cool animation here*/
-  background-size:  cover ;
+  background: url("img/bg.jpg"); /*Placeholder BG <-- Apply cool animation here*/
+  background-size: cover;
   background-repeat: no-repeat;
   border: 1px red solid;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-/*==========================
-Generic Properties*/
-.insertborder{border:   1px solid red;}
+/*===============================
+  Generic Properties
+  .bg-black {background: #111111;}
+  .bg-white {background: #eeeeee;}
+  */
 
-<<<<<<< Updated upstream
-.bg-black {background: #111111;}
-.bg-white {background: #eeeeee;}
-<<<<<<< Updated upstream
-*/
-=======
 /* Css for the components */
 
 /* Css for the components */
@@ -294,8 +298,3 @@ Generic Properties*/
 #bottom-row{
   margin-left: 0;
 }
-
->>>>>>> Stashed changes
-=======
-.alignbottom{position: absolute;bottom: 0;left: 0;}
->>>>>>> Stashed changes

@@ -4,6 +4,8 @@ Remove all margins and paddings*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  justify-content: space-evenly;
 }
 
 /*====================================================================
@@ -32,9 +34,9 @@ Remove all margins and paddings*/
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 
-  background: url("img/bg.jpg"); /*Placeholder BG <-- Apply cool animation here*/
+  /*background: url("img/bg.jpg"); Placeholder BG <-- Apply cool animation here*/
   background-size: contain;
-  background-color: orange;
+  background-color: #251E18;
   /* position: relative; */
   display: flex;
   flex-direction: row;
@@ -52,32 +54,37 @@ Remove all margins and paddings*/
 }
 
 .title-screen__description {
-  width: 19rem;
+  width: 22rem;
+  font-size: 3rem;
 }
 
 .logo {
-  height: 20vw;
-  width: 20vw;
+  height: 32vw;
+  width: 32vw;
+  overflow: hidden;
   /* position: absolute;
   top: 18rem;
   left: 2rem; */
+  /*backdrop-filter: blur(0px);*/
 }
 .logo img {
   height: 100%;
   width: 100%;
-  border-radius: 50%;
+  border-radius: 5%;
+  backdrop-filter: blur(10px);
 }
 .title-screen__header {
   /* position: absolute;
   top: 38rem;
   left: 3rem; */
+  /*border: 1px solid red;*/
 }
 
 .title-screen__header h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .header__it {
-  font-size: 4rem;
+  font-size: 7rem;
 }
 .color-orange {
   color: orangered;
@@ -93,7 +100,7 @@ Remove all margins and paddings*/
   width: 100%;
   top: 0vh;
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.40);
 }
 
 /* Navbar links */
@@ -105,6 +112,7 @@ Remove all margins and paddings*/
   padding: 14px 27px;
   text-decoration: none;
   opacity: 1;
+  font-size: 1.5rem;
 }
 /*=========================================================
   Rotate inner wrapper in opposite direction to orient elements right way up*/
@@ -125,10 +133,11 @@ Remove all margins and paddings*/
   width: 100vw;
   height: 100vh;
 
-  background: url("img/bg.jpg"); /*Placeholder BG <-- Apply cool animation here*/
+  /*background: url("img/bg.jpg"); Placeholder BG <-- Apply cool animation here*/
+  background-color: #251E18;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px red solid;
+  /*border: 1px red solid;*/
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -142,7 +151,6 @@ Remove all margins and paddings*/
 
 /* Css for the components */
 #description {
-  border: 2px solid black;
   height: 100%;
   margin-left: 48px;
   padding: 10px;
@@ -150,51 +158,52 @@ Remove all margins and paddings*/
 .description__div {
   padding: 20px 90px;
 }
+
 .color-yellow {
   color: #f89a1d;
 }
 .description__div h1 {
-  font-size: 50px;
+  font-size: 3rem;
   letter-spacing: 1.01px;
   margin-bottom: 30px;
 }
 
 .description__div p {
   color: #f9f9fb;
-  font-size: 19px;
+  font-size: 1.3rem;
   letter-spacing: 1.01px;
-  margin-bottom: 40px;
+}
+.bottom_half{
+  height: 70%;
+}
+.half{
+  width: 49%;
+  height: 100%;
+  display: inline-block;
+
 }
 .department__img {
-  height: 80%;
-  margin: 0px 50px;
+  height: 90%;
+  width: 90%;
+  border-radius: 3%;
+  margin: 5% 0 0 5%;
+  overflow: hidden;
 }
 .department__img img {
   width: 100%;
   height: 100%;
 }
 
-.letter__department {
-  border: 2px solid green;
-  height: 100%;
-  color: #f9f9fb;
+.letter {
+  border: 2px solid white;
+  font-size: 1.5rem;
+  padding: 5%;
+  border-radius: 6%;
+  margin: 1%;
 }
-.letter__department-letter {
-  border: 2px solid #f9f9fb;
-  margin: 50px;
-  padding: 30px 20px;
-}
-.letter__department-letter p {
-  font-size: 19px;
-}
-.letter__department-letter p:first-child {
-  margin-bottom: 20px;
-}
-.auther {
-  float: right;
-  margin-right: 50px;
-  font-size: 20px;
-  width: 40%;
+.author{
+   font-size: 1.5rem;
+   text-align: right;
 }
 
 /* Committe section */

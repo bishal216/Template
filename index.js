@@ -11,5 +11,4 @@ function stickyFunction() {
   // Get the offset position of the navbar
   var navPos = navbar.getBoundingClientRect().left;
 
-  console.log(navPos);
 }
